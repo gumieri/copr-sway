@@ -1,6 +1,6 @@
 Name:           wl-clipboard
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Wayland clipboard utilities
 Group:          User Interface/X
 License:        GPL-3.0
@@ -25,19 +25,22 @@ wl-clipboard provides two command-line Wayland clipboard utilities, wl-copy and 
 mkdir %{_target_Platform}
 
 %build
-meson build
-ninja -C build
+%meson
+%meson_build
 
 %install
-mkdir -p %{buildroot}%{_bindir}
-DESTDIR=%{buildroot} ninja -C build install
+%meson_install
 
 %files
 %license COPYING
 %doc README.md
-/usr/local/bin/*
-/usr/local/share/man/man1/*
+%{_bindir}/wl-copy
+%{_bindir}/wl-paste
+%{_mandir}/man1/*
 
 %changelog
+* Sat Jun 22 2019 Daniel Kutka <dano.kutka@gmail.com> - 1.0-2
+- Fixed for Silverblue
+
 * Fri Mar 29 2019 Rafael Gumieri <rafael@gumieri.com> - 1.0-1
 - First config
