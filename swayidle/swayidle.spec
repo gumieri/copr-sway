@@ -13,6 +13,7 @@ BuildRequires:  clang
 BuildRequires:  meson
 BuildRequires:  wayland-devel
 BuildRequires:  wayland-protocols-devel
+BuildRequires:  systemd
 BuildRequires:  scdoc
 
 
