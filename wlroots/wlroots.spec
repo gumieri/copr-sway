@@ -2,7 +2,7 @@
 
 
 Name:           wlroots
-Version:        0.6.0
+Version:        0.7.0
 Release:        1%{?dist}
 Summary:        A modular Wayland compositor library
 
@@ -138,6 +138,9 @@ done
 %{_libdir}/pkgconfig/%{name}.pc
 
 %changelog
+* Wed Aug 28 2019 Rafael Gumieri <rafael@gumieri.com> - 0.7.0-1
+- Update to 0.7.0
+
 * Mon Jun 03 2019 Rafael Gumieri <rafael@gumieri.com> - 0.6.0-1
 - Update to 0.6.0
 
