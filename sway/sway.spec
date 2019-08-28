@@ -1,5 +1,5 @@
 Name:           sway
-Version:        1.1.1
+Version:        1.2
 Release:        1%{?dist}
 Summary:        i3-compatible window manager for Wayland
 Group:          User Interface/X
@@ -82,6 +82,9 @@ sed -i "s|^output \* bg .*|output * bg /usr/share/backgrounds/f%{fedora}/default
 %{_datadir}/backgrounds/sway/*.png
 
 %changelog
+* Wed Aug 28 2019 Rafael Gumieri <rafael@gumieri.com> - 1.2-1
+- Update to 1.2
+
 * Mon Jun 03 2019 Rafael Gumieri <rafael@gumieri.com> - 1.1.1-1
 - Update to 1.1.1
 
