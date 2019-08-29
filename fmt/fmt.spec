@@ -17,10 +17,10 @@
 
 
 Name:           fmt
-Version:        5.3.0
-Release:        2%{?dist}
+Version:        6.0.0
+Release:        1%{?dist}
 Summary:        A modern formatting library
-License:        BSD-2-Clause
+License:        MIT
 Group:          Development/Libraries/C and C++          
 Url:            https://github.com/fmtlib/fmt
 Source:         https://github.com/fmtlib/fmt/archive/%{version}/%{name}-%{version}.tar.gz
@@ -73,8 +73,8 @@ EOF
 
 %files
 %defattr(-,root,root)
-%doc LICENSE.rst README.rst ChangeLog.rst CONTRIBUTING.rst
-%{_libdir}/libfmt.so.5*
+%doc LICENSE.rst README.rst ChangeLog.rst CONTRIBUTING.md
+%{_libdir}/libfmt.so.6*
 
 %files devel
 %defattr(-,root,root)
@@ -82,9 +82,11 @@ EOF
 %{_libdir}/cmake/fmt
 %{_libdir}/libfmt.so
 %{_libdir}/pkgconfig/%{name}.pc
-%{_datadir}/pkgconfig/%{name}.pc
 
 %changelog
+
+* Thu Aug 29 2019 Rafael Gumieri <rafael@gumieri.com> - 6.0.0-1
+- Update to 6.0.0
 
 * Mon May 27 2019 Rafael Gumieri <rafael@gumieri.com> - 5.3.0-2
 - Fix fmt package name for fedora
