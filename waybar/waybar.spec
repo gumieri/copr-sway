@@ -2,7 +2,7 @@
 %define waybar_dir Waybar-%{version}
 
 Name:       waybar
-Version:    0.7.2
+Version:    0.8.0
 Release:    1%{?dist}
 Summary:    Highly customizable Wayland bar for Sway and Wlroots based compositors.
 License:    MIT
@@ -26,11 +26,11 @@ BuildRequires:  wlroots-devel >= 0.5
 BuildRequires:	libsigc++-devel
 BuildRequires:	libnl3-devel
 BuildRequires:	libudev-devel
-BuildRequires:	fmt-devel >= 5.3.0
+BuildRequires:	fmt-devel >= 6.0.0
 BuildRequires:	libmpdclient-devel
 BuildRequires:	git
 BuildRequires:	spdlog-devel >= 1.3.1
-Requires:	      fmt >= 5.3.0
+Requires:	      fmt >= 6.0.0
 Recommends:     sway
 Recommends:     fontawesome-fonts
 
@@ -68,6 +68,9 @@ Current features
 %{_bindir}/waybar
 
 %changelog
+* Sun Sep 01 2019 Rafael Gumieri <rafael@gumieri.com> - 0.8.0-1
+- Update to 0.8.0
+
 * Thu Aug 08 2019 Rafael Gumieri <rafael@gumieri.com> - 0.7.2-1
 - Bump to 0.7.2
 
