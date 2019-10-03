@@ -37,6 +37,10 @@ mkdir %{_target_Platform}
 %{_bindir}/wl-copy
 %{_bindir}/wl-paste
 %{_mandir}/man1/*
+%{_datadir}/bash-completion/completions/wl-copy
+%{_datadir}/bash-completion/completions/wl-paste
+%{_datadir}/zsh/site-functions/_wl-copy
+%{_datadir}/zsh/site-functions/_wl-paste
 
 %changelog
 * Thu Oct 03 2019 Rafael Gumieri <rafael.gumieri@gmail.com> - 2.0-1
