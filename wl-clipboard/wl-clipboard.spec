@@ -1,6 +1,6 @@
 Name:           wl-clipboard
-Version:        1.0.0
-Release:        2%{?dist}
+Version:        2.0.0
+Release:        1%{?dist}
 Summary:        Wayland clipboard utilities
 Group:          User Interface/X
 License:        GPL-3.0
@@ -39,6 +39,9 @@ mkdir %{_target_Platform}
 %{_mandir}/man1/*
 
 %changelog
+* Thu Oct 03 2019 Rafael Gumieri <rafael.gumieri@gmail.com> - 2.0-1
+- Major release
+
 * Sat Jun 22 2019 Daniel Kutka <dano.kutka@gmail.com> - 1.0-2
 - Fixed for Silverblue
 
