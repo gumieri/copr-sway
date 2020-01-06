@@ -1,8 +1,5 @@
-%global api_ver 3
-
-
 Name:           wlroots
-Version:        0.9.0
+Version:        0.9.1
 Release:        1%{?dist}
 Summary:        A modular Wayland compositor library
 
@@ -125,7 +122,7 @@ done
 %doc %dir %{_pkgdocdir}
 %doc %{_pkgdocdir}/README.md
 %license LICENSE
-%{_libdir}/lib%{name}.so.%{api_ver}*
+%{_libdir}/lib%{name}.so.*
 
 %license LICENSE
 %doc README.md
@@ -138,6 +135,10 @@ done
 %{_libdir}/pkgconfig/%{name}.pc
 
 %changelog
+* Mon Jan 06 2020 Rafael Gumieri <rafael@gumieri.com> - 0.9.1-1
+- get any `so` of any api version
+- Update to 0.9.1
+
 * Thu Jan 02 2020 Rafael Gumieri <rafael@gumieri.com> - 0.9.0-1
 - Update to 0.9.0
 

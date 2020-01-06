@@ -22,7 +22,7 @@ BuildRequires:	libdbusmenu-gtk3-devel
 BuildRequires:	pulseaudio-libs-devel
 BuildRequires:	wayland-devel
 BuildRequires:	sway >= 1.0
-BuildRequires:  wlroots-devel >= 0.5
+BuildRequires:  wlroots-devel < 0.9
 BuildRequires:	libsigc++-devel
 BuildRequires:	libnl3-devel
 BuildRequires:	libudev-devel
